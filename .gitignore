@@ -1,0 +1,6 @@
+/api/target/*
+/app/target/*
+!/app/target/article-*.jar
+/.idea
+*.iml
+/logs

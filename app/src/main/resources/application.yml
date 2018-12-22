@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: article
+  profiles:
+    active: local
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+  zipkin:
+    sender:
+      type: web
+
+  sleuth:
+    sampler:
+      probability: 1.0
+server:
+  port: 9011
+  tomcat:
+    uri-encoding: UTF-8
